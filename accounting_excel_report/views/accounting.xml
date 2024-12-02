@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <menuitem id="menu_summary_penjualan"
+              name="Summary Penjualan"
+              parent="account.menu_finance_reports"
+              action="action_summary_penjualan"
+              sequence="200"/>
+    <menuitem id="menu_laporan_penjualan"
+              name="Laporan Penjualan"
+              parent="account.menu_finance_reports"
+              action="action_laporan_penjualan"
+              sequence="200"/>
+     <menuitem id="menu_laporan_pmbelian"
+              name="Laporan Pembelian"
+              parent="account.menu_finance_reports"
+              action="action_laporan_pembelian"
+              sequence="200"/>
+</odoo>

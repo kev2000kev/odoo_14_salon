@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_laporan_penjualan_form" model="ir.ui.view">
+        <field name="name">laporan.penjualan.wizard.form</field>
+        <field name="model">laporan.penjualan.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Laporan Penjualan">
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="type"/>
+                    <field name="all_employee"/>
+                    <field name="employee" widget="many2many_tags" attrs="{'invisible': [('all_employee', '=', True)]}"/>
+                </group>
+                <footer>
+                    <button name="action_print_kartu" type="object" string="Print"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_laporan_penjualan" model="ir.actions.act_window">
+        <field name="name">Laporan Penjualan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">laporan.penjualan.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_laporan_penjualan_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

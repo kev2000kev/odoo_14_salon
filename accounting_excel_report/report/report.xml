@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_summary_penjualan_xlsx" model="ir.actions.report">
+        <field name="name">Summary Penjualan</field>
+        <field name="model">summary.penjualan.wizard</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">accounting_excel_report.report_summary_penjualan_xls</field>
+        <field name="report_file">accounting_excel_report.report_summary_penjualan_xls</field>
+        <field name="binding_type">report</field>
+    </record>
+    <record id="report_laporan_penjualan_xlsx" model="ir.actions.report">
+        <field name="name">Laporan Penjualan</field>
+        <field name="model">laporan.penjualan.wizard</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">accounting_excel_report.report_laporan_penjualan_xls</field>
+        <field name="report_file">accounting_excel_report.report_laporan_penjualan_xls</field>
+        <field name="binding_type">report</field>
+    </record>
+    <record id="report_laporan_pembelian_xlsx" model="ir.actions.report">
+        <field name="name">Laporan Pembelian</field>
+        <field name="model">laporan.pembelian.wizard</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">accounting_excel_report.report_laporan_pembelian_xls</field>
+        <field name="report_file">accounting_excel_report.report_laporan_pembelian_xls</field>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
